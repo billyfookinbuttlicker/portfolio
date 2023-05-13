@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PORTFOLIO WEBSITE</title>
+  <meta name="description" content="">
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link href="./assets/favicon.ico" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,500;1,500&family=Space+Mono&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        position:relative;
+        padding:0.5%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        
+    }
+
+    .am{
+        height:100vh;
+        width: 100%;
+        background-color: black;
+    }
+
+    nav{
+        width: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 20px 8%;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+    }
+
+    .name{
+        text-align: center;
+    }
+
+
+    .name h1{
+        color: #fff;
+        font-size: 100px;
+        font-weight: 600;
+    }
+
+    .bgv{
+        position:absolute;
+        right:0;
+        bottom:0;
+        z-index:-1;
+    }
+
+    html{
+        scroll-behavior: smooth;
+        
+    }
+
+    .gotop{
+        position: fixed;
+        width: 40px ;
+        height:40px;
+        background: #fff;
+        bottom: 40px;
+        right: 40px;;
+    }
+
+    .projects{
+      height: 100vh;
+      width:100%;
+    }
+
+    .portfolio_area{}
+.portfolio{}
+.portfoloi_top{}
+.portfoloi_content_area{}
+.portfolio_menu{
+	text-align: center;
+	overflow: hidden;
+	margin-top:22px;
+	margin-bottom:48px;
+}
+.portfolio_menu ul{
+	list-style: none outside none;
+    text-align: center;
+
+}
+.portfolio_menu ul li{
+    display: inline-block;
+}
+.portfolio_menu ul li a{
+	color: #ffffff;
+	background: transparent;
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.portfolio_content{}
+.portfolio_single_content{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	margin-bottom:30px;
+	overflow:hidden;
+	
+}
+.portfolio_single_content:hover img{
+	 -o-transform: scale(2);
+	 -webkit-transform: scale(2);
+	 -moz-transform: scale(2);
+	 -ms-transform: scale(2);
+	 transform: scale(2);
+}
+.portfolio_single_content img{
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	cursor:pointer;
+	-moz-transition:all 1s;
+	-webkit-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	transition:all 1s;
+}
+.portfolio_single_content .canv{
+	width:100% !important;
+	height:100% !important;
+}
+.portfolio_single_content div+div{
+	background: none repeat scroll 0 0 rgba(255,255,255,.9);
+	bottom: -100%;
+	color: #FFC000;
+	font-weight: bold;
+	left: 0;
+	margin: 0;
+	min-height: 90px;
+	padding:31px 5px 0 10px;
+	position: absolute;
+	width: 100%;
+	z-index: 12;
+	border-top:0;
+}
+/*.portfolio_single_content:hover div+div{bottom: 0;}*/
+.portfolio_single_content div{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	width:100%;
+	height:100%;
+	text-align:center;
+	transform:scale(0);
+	transition:all .6s;
+	opacity:0;
+}
+.portfolio_single_content:hover div{
+	transform:scale(1);
+	opacity:1;
+}
+.portfolio_single_content div a{
+	color: #FFFFFF;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 40%;
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.portfolio_single_content div span{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+.portfolio_content{}
+.portfolio_content{
+    margin-top: 36px;
+    overflow: hidden;
+}
+
+
+.container{
+    background-color: black;
+    width: 100%;
+}
+
+
+.kp{
+    background-color: black;
+    width: 100%;
+
+}
+
+.contact{
+    height:170vh;
+    background-color: black;
+}
+    
+
+ul.social-list {
+	text-align: center;
+	margin: 0 auto;
+}
+ul.social-list li{
+	display: inline-block;
+	margin-right: 20px;
+}
+ul.social-list li .rotate-box-1 {
+	margin: 0;
+}
+ul.social-list li a i {
+	color: #fff;
+	font-size:20px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  background-color: #fff;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    font-family: 'Domine', serif;
+    
+
+
+}
+
+.row:after,
+.row:before {
+    content: " ";
+    display: table
+}
+
+.row:after {
+    clear: both
+}
+
+.black{
+    background-color: #000000;
+    height:9vh;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+/* Adjust the font size and line height */
+h1 {
+font-size: 24px;
+line-height: 32px;
+}
+
+/* Hide the video background on small screens */
+.bgv {
+display: none;
+}
+
+/* Adjust the navigation menu */
+nav ul {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+margin: 10px 0;
+}
+
+/* Adjust the section with the black background */
+#black {
+height: 30px;
+}
+
+/* Adjust the About me section */
+.am {
+padding: 20px;
+}
+
+.am h3 {
+font-size: 18px;
+line-height: 24px;
+}
+
+.am p {
+font-size: 14px;
+line-height: 20px;
+}
+
+.am img {
+width: 100%;
+height: auto;
+}
+
+
+/* Adjust the portfolio section */
+.portfolio_menu {
+margin-bottom: 20px;
+}
+
+.portfolio_menu ul {
+flex-wrap: wrap;
+justify-content: center;
+margin: 0;
+padding: 0;
+}
+
+.portfolio_menu li {
+margin: 5px;
+}
+
+.portfolio_single_content {
+margin: 10px;
+}
+
+.portfolio_single_content img {
+width: 100%;
+height: auto;
+}
+
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+    <section id="start1">
+
+    <div class="hero">
+
+        <video autoplay loop muted plays-inline class="bgv">
+            <source src="D:\portfolio\bgv (2).mp4" type="video/mp4">
+        </video>
+
+
+        <nav>
+            <ul>
+                <li><a href="#start1">HOME</a></li>
+                <li><a href="#am1">ABOUT ME</a></li>
+                <li><a href="#portfolio-section">PROJECTS</a></li>
+                <li><a href="#social-section">CONTACT ME</a></li>
+            </ul>
+        </nav>
+        <div class="name">
+            <h1>Je Suis Kunal</h1>
+        </div>
+
+
+
+    </div>
+</section>
+
+<section id="black">
+    <div class="black">
+        <p>&nbsp;</p>
+    </div>
+</section>
+
+
+
+
+    <!--About me-->
+    <section id="am1">
+    <div class="am">
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center text-white">
+            <h1 class="h2">01 : About me</h1>
+          </div>
+          
+          <div class="row ">
+            <div class="col-md-10 col-md-offset-1 ">
+              <div class="row ">
+                <div class="col-xs-12 col-md-6 text-white ">
+                    
+                  <h3>Personal Intel</h3>
+                  <p>Ayyo this is Kunal I be that 20 year old guy tryna code stuff that'll make your eyes pop out cause my taste Avant Garde with caffeine running through my veins. This is my webfolio just so ya'll could know my work, hobbies and could contact me.  </p>
+                  <h3>Professional Intel </h3>
+                  <p>I am studying Computer Science and from developing webs to building machine learning models, I'm passionate about using technology to make ya'll lazier. (I will make a workout and diet app to balance my KARMA &#128151)
+                  <h3>Stuff I do in my pastime</h3>
+                  <p>When I am not coding, I am learning how to code (lol jk, i do that simultaenously). When I am not coding I am Travelling or jamming to sick beats or jamming to jazz or jamming to lofi or Socialsing or Watching a movie or Playing some silly game or Eating the most exquisite dishes or trying to make em or just mindessly muching on snacks while doing all of it at once </p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <img src="pg33.PNG" class="img-responsive" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+              
+
+            </div>
+
+
+</section>
+
+<section id="portfolio-section" class="page bg-style1">
+    <div class="kp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="portfolio">
+                    <!-- Begin page header-->
+                    <div class="page-header-wrapper">
+                        <div class="container">
+                            <div class="page-header text-center wow fadeInDown text-white" data-wow-delay="0.4s">
+                                <h2>My Work</h2>
+                                <div class="devider"></div>
+                                <p class="subtitle">Some of the stuff I did</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End page header-->
+                    <div class="portfoloi_content_area" >
+                        <div class="portfolio_menu" id="filters">
+                            <ul>
+                                <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a></li>
+                                <li><a href="#porfolio_menu" data-filter=".websites">Web Dev</a></li>
+                                <li><a href="#porfolio_menu" data-filter=".webDesign" >UI/UX</a></li>
+                                <li><a href="#porfolio_menu" data-filter=".appsDevelopment">Data Science</a></li>
+                                <li><a href="#porfolio_menu" data-filter=".GraphicDesign">Python</a></li>
+                                <li><a href="#porfolio_menu" data-filter=".responsive">C/C++</a></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio_content">
+                            <div class="row"  id="portfolio">
+                                <div class="col-xs-12 col-sm-4 appsDevelopment">
+                                    <div class="portfolio_single_content">
+                                        <img src="pg34.PNG" alt="title"/>
+                                        <div>
+                                            <a href="#">Cinema Persuasion Engine</a>
+                                            <span>Data Science</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 GraphicDesign">
+                                    <div class="portfolio_single_content">
+                                        <img src="pg35.PNG" alt="title"/>
+                                        <div>
+                                            <a href="#">IoT based Weather reporting and monitoring system</a>
+                                            <span>IoT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 responsive">
+                                    <div class="portfolio_single_content">
+                                        <img src="pg36.PNG" alt="title"/>
+                                        <div>
+                                            <a href="#">Stock Diagnosis</a>
+                                            <span>Data Science</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 webDesign websites">
+                                    <div class="portfolio_single_content">
+                                        <img src="pg37.PNG" alt="title"/>
+                                        <div>
+                                            <a href="#">Travel Website</a>
+                                            <span>Web Dev</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-xs-12 col-sm-4 appsDevelopment websites">
+                                    <div class="portfolio_single_content">
+                                        <img src="pg38.PNG" alt="title"/>
+                                        <div>
+                                            <a href="#">Streamlined Code Creation and Customization.</a>
+                                            <span>Python</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-4 websites">
+                                    <div class="portfolio_single_content">
+                                        <img src="pg23.jpg" alt="title"/>
+                                        <div>
+                                            <a href="#">DOGTOOTH</a>
+                                            <span>Subtitle</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+
+<section id="social-section">
+            
+    <!-- Begin page header-->
+    <div class="contact">
+   <div class="page-header-wrapper">
+       <div class="container text-white">
+           <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+               <h2>CONTACT ME</h2>
+               <div class="devider"></div>
+               <p class="subtitle">My social medias</p>
+           </div>
+       </div>
+   </div>
+   <!-- End page header-->
+   
+   <div class="container">
+       <ul class="social-list">
+           <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span class="rotate-box-icon"><i class="fa fa-facebook"></i></span></a></li>
+           <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span class="rotate-box-icon"><i class="fa fa-twitter"></i></span></a></li>
+           <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.5s"><span class="rotate-box-icon"><i class="fa fa-google-plus"></i></span></a></li>
+           <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.6s"><span class="rotate-box-icon"><i class="fa fa-pinterest-p"></i></span></a></li>
+           <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.7s"><span class="rotate-box-icon"><i class="fa fa-tumblr"></i></span></a></li>
+       </ul>
+   </div>
+
+   <section id="black">
+    <div class="black">
+        <p>&nbsp;</p>
+    </div>
+</section>
+
+
+   <div class="col-md-8 col-md-offset-2 section-container-spacer">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <img src="pg1.PNG" class="img-responsive" alt="">
+        <p>Menphis skyline</p>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <img src="pg35.PNG" class="img-responsive" alt="">
+        <p>Menphis skyline</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12">
+    <img src="pg22.PNG" class="img-responsive" alt="">
+  </div>
+
+
+
+
+</div>
+
+
+   
+</section>
+
+
+<a class="gotop" href="#start1"> <i class="fa-solid fa-up"></i></a>
+
+
+
+
+<script src="https://kit.fontawesome.com/5291e541e9.js" crossorigin="anonymous"></script>
+  <script src="" async defer></script>
+</body>
+
+</html>
